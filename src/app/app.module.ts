@@ -8,6 +8,7 @@ import {RouterModule, Routes} from '@angular/router';
 import {ModuleWithProviders} from '@angular/compiler/src/core';
 import { LoginComponent } from './login/login.component'
 import {HttpInterceptorModule} from './service/header-interceptor.service';
+import { UserComponent } from './model/user/user.component';
 
 export const appRouters: Routes = [
 
@@ -16,14 +17,14 @@ export const appRouters: Routes = [
     {path: '', component : LoginComponent}
 ];
 
-
 export const routes : ModuleWithProviders = RouterModule.forRoot(appRouters);
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    LoginComponent
+    LoginComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,

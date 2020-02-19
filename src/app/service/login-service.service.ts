@@ -12,7 +12,7 @@ export class LoginServiceService {
   constructor( private http: HttpClient, private router: Router ) { }
 
     
-    // tslint:disable-next-line: one-line
+    
     login(usuario){     
      return this.http.post(AppConstants.baseLogin, JSON.stringify(usuario)).subscribe(data => {
 
