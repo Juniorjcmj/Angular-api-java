@@ -1,0 +1,18 @@
+<table class="table table-hover content">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">NOME</th>
+      <th scope="col">CPF</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let studant students">      
+      <td>{{studant.id}}</td>
+      <td>{{studant.nome}}</td>
+      <td>{{studant.cpf}}</td>
+    </tr>
+    
+  </tbody>
+</table>
